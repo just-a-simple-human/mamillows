@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://necolas.github.io/normalize.css/latest/normalize.css" rel="stylesheet" />
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="./index.min.css">
+    <title>Каталог</title>
+</head>
+<body>
+    <header class="header">
+        <a class="header__logo">
+            <img class="header__logo-img" src="./images/logo.png"/>
+        </a>
+        <div class="header__search-container">
+            <input class="header__search-input" placeholder="Поиск..." name="search" />
+        </div>
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a class="menu__link" href="">Главная</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="">Каталог</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="">О нас</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="">Идеи</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__button-container">
+            <button class="header__button"><img class="header__button-img" src="./images/cart.png" alt=""></button>
+            <button class="header__button"><img class="header__button-img" src="./images/account.png" alt=""></button>
+        </div>
+    </header>
+    <main class="page">
+        <div class="category-block category-block--classic">
+            <img class="category-block__bg" src="./images/classic-category-bg.png" alt="">
+            <p class="category-block__subtitle">Чаще всего покупают!</p>
+            <p class="category-block__title">Классический</p>
+            <p class="category-block__description">
+                Классическая линия маршмеллоу maMiLliow’s имеет изысканный
+                ванильный нежный вкус с легкими нотками пломбирного мороженого
+                или вкус фруктового сочного микса.
+                <br><br>
+                Продукт мягкий, воздушный и тает во рту, оставляя приятное
+                сливочное послевкусие. В поджаренном виде добавляется
+                карамельная хрустящая корочка, а внутри он становится мягучим и тёплым.
+            </p>
+            <ul class="category-block__info">
+                <li class="category-block__info-item">доступно в размерах: 90 г и 120 г;</li>
+                <li class="category-block__info-item">имеет два вкуса: ваниль-пломбир и фруктовый микс.</li>
+            </ul>
+            <div class="category-block__button-container">
+                <button class="category-block__button">Открыть</button>
+            </div>
+        </div>
+        <section class="catalog">
+            <div class="catalog__header">
+                <h1 class="catalog__heading">Каталог</h1>
+                <nav class="catalog__nav">
+                    <ul class="catalog__nav-list">
+                        <li class="catalog__nav-item">
+                            <a href="./sugar-free.html" class="catalog__nav-link">maMillow's SUGAR FREE</a>
+                        </li>
+                        <li class="catalog__nav-item">
+                            <a href="./classic.html" class="catalog__nav-link catalog__nav-link--active">maMillow's CLASSIC</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="catalog__product-list">
+                <article class="catalog__product-card">
+                    <h3 class="catalog__product-title" style="color: #f39c00;">Vanilla+Plombir</h3>
+                    <div class="catalog__product-container" style="background-image: url(images/vanilla-plombir-90-bg.png);">
+                        <p class="catalog__product-description">Насыщенный пломбир + ваниль</p>
+                        <p class="catalog__product-weight catalog__product-weight--small">90</p>
+                        <img src="images/vanilla-plombir-90-classic.png" alt="" class="catalog__product-image">
+                    </div>
+                </article>
+                <article class="catalog__product-card">
+                    <h3 class="catalog__product-title" style="color: #d84e90;">Fruitmix</h3>
+                    <div class="catalog__product-container" style="background-image: url(images/fruitmix-90-bg.png);">
+                        <p class="catalog__product-description">Яркий фруктовый микс</p>
+                        <p class="catalog__product-weight catalog__product-weight--small">90</p>
+                        <img src="images/fruitmix-90-classic.png" alt="" class="catalog__product-image">
+                    </div>
+                </article>
+                <article class="catalog__product-card">
+                    <h3 class="catalog__product-title" style="color: #40bbcb;">Vanilla+Plombir</h3>
+                    <div class="catalog__product-container" style="background-image: url(images/vanilla-plombir-120-bg.png);">
+                        <p class="catalog__product-description">Насыщенный пломбир + ваниль</p>
+                        <p class="catalog__product-weight catalog__product-weight--big">120</p>
+                        <img src="images/vanilla-plombir-120-classic.png" alt="" class="catalog__product-image">
+                    </div>
+                </article>
+                <article class="catalog__product-card">
+                    <h3 class="catalog__product-title" style="color: #486dce;">Fruitmix</h3>
+                    <div class="catalog__product-container" style="background-image: url(images/fruitmix-120-bg.png);">
+                        <p class="catalog__product-description">Яркий фруктовый микс</p>
+                        <p class="catalog__product-weight catalog__product-weight--big">120</p>
+                        <img src="images/fruitmix-120-classic.png" alt="" class="catalog__product-image">
+                    </div>
+                </article>
+            </div>
+        </section>
+        <div class="feedback">
+            <section class="contact" aria-labelledby="#contact-heading">
+                <h2 id="contact-heading" class="contact__heading">Контакты</h2>
+                <img src="./images/contact-bg.png" alt="" class="contact__image">
+                <ul class="contact__list">
+                    <li class="contact__item">
+                        <img src="./images/contact-email.png" alt="" class="contact__icon">
+                        <div class="contact__info">
+                            <p class="contact__title">Email</p>
+                            <a href="mailto:info@mimollows.ru" class="contact__link">info@mimillows.ru</a>
+                        </div>
+                    </li>
+                    <li class="contact__item">
+                        <img src="./images/contact-tg.png" alt="" class="contact__icon">
+                        <div class="contact__info">
+                            <p class="contact__title">Поддержка</p>
+                            <a href="t.me/mamillows" target="_blank" class="contact__link">t.me/mamillows</a>
+                        </div>
+                    </li>
+                    <li class="contact__item">
+                        <img src="./images/contact-vk.png" alt="" class="contact__icon">
+                        <div class="contact__info">
+                            <p class="contact__title">ВКонтакте</p>
+                            <a href="vk.com/mamillows" target="_blank" class="contact__link">vk.com/mamillows</a>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="feedback__container">
+                <h2 class="feedback__heading">Отправить вопрос</h2>
+                <p class="feedback__text">Если вы хотите обсудить что-либо, связанное с оплатой, учётной записью, лицензированием, партнёрством или задать вопросы перед продажей, вы попали по адресу</p>
+                <form action="" class="feedback__form">
+                    <div class="feedback__value feedback__name">
+                        <label for="feedback-name" class="feedback__label">Полное имя</label>
+                        <input placeholder="Введите имя..." name="feedback-name" type="text" class="feedback__input">
+                    </div>
+                    <div class="feedback__value feedback__email">
+                        <label for="feedback-email" class="feedback__label">Email</label>
+                        <input placeholder="Введите email..." name="feedback-email" type="text" class="feedback__input">
+                    </div>
+                    <div class="feedback__value feedback__phone">
+                        <label for="feedback-phone" class="feedback__label">Номер телефона</label>
+                        <input placeholder="Введите номер телефона..." name="feedback-phone" type="text" class="feedback__input">
+                    </div>
+                    <div class="feedback__value feedback__question">
+                        <label for="feedback-question" class="feedback__label">Ваш вопрос</label>
+                        <textarea placeholder="Написать сообщение" name="feedback-question" class="feedback__text-area"></textarea>
+                    </div>
+                    <button type="submit" class="feedback__button">Отправить</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="subscription">
+            <label for="subscription-email" class="subscription__label">Получите доступ к интересным статьям, акциям и <br>специальным предложениям для вас</label>
+            <form action="" class="subscription__form">
+                <fieldset class="subscription__field">
+                    <input type="text" id="subscription-email" class="subscription__input">
+                    <button type="submit" class="subscription__button">Отправить</button>
+                </fieldset>
+                <fieldset class="subscription__field">
+                    <input type="checkbox" checked="false" id="subscription-checkbox" class="subscription__privacy-checkbox">
+                    <label for="subscription-checkbox" class="subscription__privacy-label">Я согласен с <a href="">политикой конфиденциальности</a></label>
+                </fieldset>
+            </form>
+        </div>
+
+    </footer>
+</body>
+</html>
