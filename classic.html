@@ -6,11 +6,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://necolas.github.io/normalize.css/latest/normalize.css" rel="stylesheet" />
     <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
-    <link rel="stylesheet" href="index.min.css">
+    <link rel="stylesheet" href="index.css">
     <title>Каталог</title>
 </head>
 <body>
     <header class="header">
+        <button class="header__menu-button">
+            <img src="images/menu-burger.png" alt="" class="header__menu-image">
+        </button>
         <a class="header__logo">
             <img class="header__logo-img" src="images/logo.png">
         </a>
@@ -43,14 +46,12 @@
     </header>
     <main class="page">
         <div class="category-block category-block--classic">
-            <img class="category-block__bg" src="images/classic-category-bg.png" alt="">
             <p class="category-block__subtitle">Чаще всего покупают!</p>
             <p class="category-block__title">Классический</p>
             <p class="category-block__description">
                 Классическая линия маршмеллоу maMiLliow’s имеет изысканный
                 ванильный нежный вкус с легкими нотками пломбирного мороженого
                 или вкус фруктового сочного микса.
-                <br><br>
                 Продукт мягкий, воздушный и тает во рту, оставляя приятное
                 сливочное послевкусие. В поджаренном виде добавляется
                 карамельная хрустящая корочка, а внутри он становится мягучим и тёплым.
@@ -59,9 +60,7 @@
                 <li class="category-block__info-item">доступно в размерах: 90 г и 120 г;</li>
                 <li class="category-block__info-item">имеет два вкуса: ваниль-пломбир и фруктовый микс.</li>
             </ul>
-            <div class="category-block__button-container">
-                <button class="category-block__button">Открыть</button>
-            </div>
+            <button class="category-block__button">Открыть</button>
         </div>
         <section class="catalog">
             <div class="catalog__header">
@@ -69,10 +68,10 @@
                 <nav class="catalog__nav">
                     <ul class="catalog__nav-list">
                         <li class="catalog__nav-item">
-                            <a href="sugar-free.html" class="catalog__nav-link">maMillow's SUGAR FREE</a>
+                            <a href="sugar-free.html" class="catalog__nav-link catalog__nav-link--blue">maMillow's SUGAR FREE</a>
                         </li>
                         <li class="catalog__nav-item">
-                            <a href="classic.html" class="catalog__nav-link catalog__nav-link--active">maMillow's CLASSIC</a>
+                            <a href="classic.html" class="catalog__nav-link catalog__nav-link--pink catalog__nav-link--active">maMillow's CLASSIC</a>
                         </li>
                     </ul>
                 </nav>
@@ -80,34 +79,50 @@
             <div class="catalog__product-list">
                 <article class="catalog__product-card">
                     <h3 class="catalog__product-title" style="color: #f39c00;">Vanilla+Plombir</h3>
-                    <div class="catalog__product-container" style="background-image: url(images/vanilla-plombir-90-bg.png);">
+                    <div class="catalog__product-container vanilla-plombir-90-bg">
                         <p class="catalog__product-description">Насыщенный пломбир + ваниль</p>
                         <p class="catalog__product-weight catalog__product-weight--small">90 г</p>
-                        <img src="images/vanilla-plombir-90-classic.png" alt="" class="catalog__product-image">
+                        <img 
+                            srcset="images/product/vanilla-plombir/90/classic-mobile.png 480w, images/product/vanilla-plombir/90/classic.png" 
+                            alt="" 
+                            class="catalog__product-image catalog__product-image--small"
+                        >
                     </div>
                 </article>
                 <article class="catalog__product-card">
                     <h3 class="catalog__product-title" style="color: #d84e90;">Fruitmix</h3>
-                    <div class="catalog__product-container" style="background-image: url(images/fruitmix-90-bg.png);">
+                    <div class="catalog__product-container fruitmix-90-bg">
                         <p class="catalog__product-description">Яркий фруктовый микс</p>
                         <p class="catalog__product-weight catalog__product-weight--small">90 г</p>
-                        <img src="images/fruitmix-90-classic.png" alt="" class="catalog__product-image">
+                        <img 
+                            srcset="images/product/fruitmix/90/classic-mobile.png 480w, images/product/fruitmix/90/classic.png" 
+                            alt="" 
+                            class="catalog__product-image catalog__product-image--small"
+                        >
                     </div>
                 </article>
                 <article class="catalog__product-card">
                     <h3 class="catalog__product-title" style="color: #40bbcb;">Vanilla+Plombir</h3>
-                    <div class="catalog__product-container" style="background-image: url(images/vanilla-plombir-120-bg.png);">
+                    <div class="catalog__product-container vanilla-plombir-120-bg">
                         <p class="catalog__product-description">Насыщенный пломбир + ваниль</p>
                         <p class="catalog__product-weight catalog__product-weight--big">120 г</p>
-                        <img src="images/vanilla-plombir-120-classic.png" alt="" class="catalog__product-image">
+                        <img 
+                            srcset="images/product/vanilla-plombir/120/classic-mobile.png 480w, images/product/vanilla-plombir/120/classic.png" 
+                            alt="" 
+                            class="catalog__product-image catalog__product-image--big"
+                        >
                     </div>
                 </article>
                 <article class="catalog__product-card">
                     <h3 class="catalog__product-title" style="color: #486dce;">Fruitmix</h3>
-                    <div class="catalog__product-container" style="background-image: url(images/fruitmix-120-bg.png);">
+                    <div class="catalog__product-container fruitmix-120-bg">
                         <p class="catalog__product-description">Яркий фруктовый микс</p>
                         <p class="catalog__product-weight catalog__product-weight--big">120 г</p>
-                        <img src="images/fruitmix-120-classic.png" alt="" class="catalog__product-image">
+                        <img 
+                            srcset="images/product/fruitmix/120/classic-mobile.png 480w, images/product/fruitmix/120/classic.png" 
+                            alt="" 
+                            class="catalog__product-image catalog__product-image--big"
+                        >
                     </div>
                 </article>
             </div>
@@ -115,7 +130,7 @@
         <div class="feedback">
             <section class="contact" aria-labelledby="#contact-heading">
                 <h2 id="contact-heading" class="contact__heading">Контакты</h2>
-                <img src="images/contact-bg.png" alt="" class="contact__image">
+                <img srcset="images/contact-bg-mobile.png 480w, images/contact-bg.png" alt="" class="contact__image">
                 <ul class="contact__list">
                     <li class="contact__item">
                         <img src="images/contact-email.png" alt="" class="contact__icon">
@@ -158,7 +173,7 @@
                     </div>
                     <div class="feedback__value feedback__question">
                         <label for="feedback-question" class="feedback__label">Ваш вопрос</label>
-                        <textarea placeholder="Написать сообщение" name="feedback-question" class="feedback__text-area"></textarea>
+                        <textarea rows="6" placeholder="Написать сообщение" name="feedback-question" class="feedback__text-area"></textarea>
                     </div>
                     <button type="submit" class="feedback__button">Отправить</button>
                 </form>
@@ -166,20 +181,45 @@
         </div>
     </main>
     <footer class="footer">
-        <div class="subscription">
-            <label for="subscription-email" class="subscription__label">Получите доступ к интересным статьям, акциям и <br>специальным предложениям для вас</label>
-            <form action="" class="subscription__form">
-                <fieldset class="subscription__field">
-                    <input type="text" id="subscription-email" class="subscription__input">
-                    <button type="submit" class="subscription__button">Отправить</button>
-                </fieldset>
-                <fieldset class="subscription__field">
-                    <input type="checkbox" checked="false" id="subscription-checkbox" class="subscription__privacy-checkbox">
-                    <label for="subscription-checkbox" class="subscription__privacy-label">Я согласен с <a href="">политикой конфиденциальности</a></label>
-                </fieldset>
-            </form>
-        </div>
-
+        <label for="subscription-email" class="footer__label">Получите доступ к интересным статьям, акциям и специальным предложениям для вас</label>
+        <form action="" class="footer__form">
+            <fieldset class="footer__field">
+                <input type="text" id="subscription-email" class="footer__input">
+                <button type="submit" class="footer__button">Отправить</button>
+            </fieldset>
+            <fieldset class="footer__field">
+                <input type="checkbox" checked="false" id="subscription-checkbox" class="footer__privacy-checkbox">
+                <label for="subscription-checkbox" class="footer__privacy-label">Я согласен с <a href="">политикой конфиденциальности</a></label>
+            </fieldset>
+        </form>
+        <img srcset="images/footer-separator-mobile.png 480w" alt="" class="footer__sepatator">
+        <p class="footer__info">
+            ООО &laquo;Компания&raquo;<br>
+            <br>
+            ИНН 12943253421<br>
+            <br>
+            Адрес юридический: 115114 г. Белгород Петров-Сергеева-Егорова-Андреева дом 4, стр. 1, 9 этаж, офис 93<br>
+            <br>
+            Безопасность платежей гарантируется использованием SSL протокола. Данные вашей банковской карты надёжно защищены при оплате онлайн<br>
+            <br>
+            &copy; 2024 ООО &laquo;Компания&raquo;. Все права защищены.
+        </p>
+        <nav class="footer__nav">
+            <a href="" class="footer__nav-link">Категория</a>
+            <a href="" class="footer__nav-link">Другая категория</a>
+            <a href="" class="footer__nav-link">Ещё категория</a>
+            <a href="" class="footer__nav-link">И ещё одна</a>
+            <a href="" class="footer__nav-link">Категория</a>
+            <a href="" class="footer__nav-link">Другая категория</a>
+            <a href="" class="footer__nav-link">Ещё категория</a>
+            <a href="" class="footer__nav-link">И ещё одна</a>
+            <a href="" class="footer__nav-link">Идеи</a>
+            <a href="" class="footer__nav-link">Контакты</a>
+            <a href="" class="footer__nav-link">Блог</a>
+            <a href="" class="footer__nav-link">Каталог</a>
+            <a href="" class="footer__nav-link">Политика конфиденциальности</a>
+            <a href="" class="footer__nav-link">Политика возврата</a>
+        </nav>
     </footer>
 </body>
 </html>

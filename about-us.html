@@ -10,8 +10,8 @@
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="index.min.css">
-    <title>Каталог</title>
+    <link rel="stylesheet" href="index.css">
+    <title>О нас</title>
 </head>
 <body>
     <header class="header">
@@ -30,7 +30,7 @@
                     <a class="menu__link" href="classic.html">Каталог</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="about-us.html">О нас</a>
+                    <a class="menu__link" href="">О нас</a>
                 </li>
                 <li class="menu__item">
                     <a class="menu__link" href="">Идеи</a>
@@ -78,7 +78,7 @@
         <section class="about-mission" id="mission" aria-labelledby="#mission-heading">
             <h2 class="about__title" id="mission-heading">Миссия maMillow's</h2>
             <p class="about__subtitle">В конце концов, <br>какое право мы имеем лишать кого-либо <br>сладостей maMiLlow's?</p>
-            <a href="" class="about-mission__link">Перейти в каталог</a>
+            <a href="classic.html" class="about-mission__link">Перейти в каталог</a>
         </section>
         <section class="about-philosophy" id="philosophy" aria-labelledby="#philosophy-heading">
             <h2 class="about__title" id="philosophy-heading">Философия maMillow's</h2>
@@ -132,7 +132,7 @@
     <div class="feedback">
         <section class="contact" aria-labelledby="#contact-heading">
             <h2 id="contact-heading" class="about__title">Контакты</h2>
-            <img src="images/contact-bg.png" alt="" class="contact__image">
+            <img srcset="images/contact-bg-mobile.png 480w, images/contact-bg.png" alt="" class="contact__image">
             <ul class="contact__list">
                 <li class="contact__item">
                     <img src="images/contact-email.png" alt="" class="contact__icon">
@@ -175,29 +175,54 @@
                 </div>
                 <div class="feedback__value feedback__question">
                     <label for="feedback-question" class="feedback__label">Ваш вопрос</label>
-                    <textarea placeholder="Написать сообщение" name="feedback-question" class="feedback__text-area"></textarea>
+                    <textarea rows="6"placeholder="Написать сообщение" name="feedback-question" class="feedback__text-area"></textarea>
                 </div>
                 <button type="submit" class="feedback__button">Отправить</button>
             </form>
         </section>
     </div>
     <footer class="footer">
-        <div class="subscription">
-            <label for="subscription-email" class="subscription__label">Получите доступ к интересным статьям, акциям и <br>специальным предложениям для вас</label>
-            <form action="" class="subscription__form">
-                <fieldset class="subscription__field">
-                    <input type="text" id="subscription-email" class="subscription__input">
-                    <button type="submit" class="subscription__button">Отправить</button>
-                </fieldset>
-                <fieldset class="subscription__field">
-                    <input type="checkbox" checked="false" id="subscription-checkbox" class="subscription__privacy-checkbox">
-                    <label for="subscription-checkbox" class="subscription__privacy-label">Я согласен с <a href="">политикой конфиденциальности</a></label>
-                </fieldset>
-            </form>
-        </div>
-
+        <label for="subscription-email" class="footer__label">Получите доступ к интересным статьям, акциям и специальным предложениям для вас</label>
+        <form action="" class="footer__form">
+            <fieldset class="footer__field">
+                <input type="text" id="subscription-email" class="footer__input">
+                <button type="submit" class="footer__button">Отправить</button>
+            </fieldset>
+            <fieldset class="footer__field">
+                <input type="checkbox" checked="false" id="subscription-checkbox" class="footer__privacy-checkbox">
+                <label for="subscription-checkbox" class="footer__privacy-label">Я согласен с <a href="">политикой конфиденциальности</a></label>
+            </fieldset>
+        </form>
+        <img srcset="images/footer-separator-mobile.png 480w" alt="" class="footer__sepatator">
+        <p class="footer__info">
+            ООО &laquo;Компания&raquo;<br>
+            <br>
+            ИНН 12943253421<br>
+            <br>
+            Адрес юридический: 115114 г. Белгород Петров-Сергеева-Егорова-Андреева дом 4, стр. 1, 9 этаж, офис 93<br>
+            <br>
+            Безопасность платежей гарантируется использованием SSL протокола. Данные вашей банковской карты надёжно защищены при оплате онлайн<br>
+            <br>
+            &copy; 2024 ООО &laquo;Компания&raquo;. Все права защищены.
+        </p>
+        <nav class="footer__nav">
+            <a href="" class="footer__nav-link">Категория</a>
+            <a href="" class="footer__nav-link">Другая категория</a>
+            <a href="" class="footer__nav-link">Ещё категория</a>
+            <a href="" class="footer__nav-link">И ещё одна</a>
+            <a href="" class="footer__nav-link">Категория</a>
+            <a href="" class="footer__nav-link">Другая категория</a>
+            <a href="" class="footer__nav-link">Ещё категория</a>
+            <a href="" class="footer__nav-link">И ещё одна</a>
+            <a href="" class="footer__nav-link">Идеи</a>
+            <a href="" class="footer__nav-link">Контакты</a>
+            <a href="" class="footer__nav-link">Блог</a>
+            <a href="" class="footer__nav-link">Каталог</a>
+            <a href="" class="footer__nav-link">Политика конфиденциальности</a>
+            <a href="" class="footer__nav-link">Политика возврата</a>
+        </nav>
     </footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="index.min.js"></script>
+<script src="scripts/about-us-page.js"></script>
 </html>
