@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://necolas.github.io/normalize.css/latest/normalize.css" rel="stylesheet" />
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="index.css">
+    <title>Главная</title>
+</head>
+<body>
+    <header class="header">
+        <a class="header__logo">
+            <img class="header__logo-img" src="images/logo.png">
+        </a>
+        <div class="header__search-container">
+            <input class="header__search-input" placeholder="Поиск..." name="search" />
+        </div>
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a class="menu__link" href="">Главная</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="classic.html">Каталог</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="">О нас</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="">Идеи</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__button-container">
+            <button class="header__button"><img class="header__button-img" src="images/cart.png" alt=""></button>
+            <button class="header__button"><img class="header__button-img" src="images/account.png" alt=""></button>
+        </div>
+    </header>
+    <main class="home-page">
+        <section class="container home-news">
+            <div class="home-news__container">
+                <h2 class="home-page__subtitle home-news__title">Новые maMILlow’s</h2>
+                <p class="home-page__main-text home-news__text">
+                    maMILlow’s бренд для взрослых, тинейджеров<br> 
+                    и детей, неважно сколько вам лет, важно что вы<br>
+                    цените качество и стиль и привыкли выбирать<br>
+                    качество и актуальность.
+                </p>
+                <a href="#feedback" class="home-news__button">Связаться</a>
+            </div>
+            <div class="swiper home-news__slider">
+                <div class="swiper-wrapper">
+                    <img src="images/home-news-img.png" alt="" class="swiper-slide home-news__img">
+                    <img src="images/home-news-img.png" alt="" class="swiper-slide home-news__img">
+                </div>
+            </div>
+            <div class="home-news__pagination"></div>
+        </section>
+        <section class="container home-assortment">
+            <div class="swiper home-assortment__slider">
+                <div class="swiper-wrapper">
+                    <img src="images/home-assortment-img.png" alt="" class="swiper-slide home-assortment__img">
+                    <img src="images/home-assortment-img.png" alt="" class="swiper-slide home-assortment__img">
+                </div>
+            </div>
+            <div class="home-assortment__container">
+                <p class="home-page__text home-assortment__text">
+                    Ассортимент продукции бренда maMILlow’s включает как<br>
+                    классические виды продукции с ванильным и фруктовым<br>
+                    вкусми, так и линию без сахара, которая подойдет людям,<br>
+                    прижерживающимся диетического и диабетического<br>
+                    питания, и приверженцам здорового образа жизни.
+                </p>
+                <div class="home-assortment__properties">
+                    <p class="home-page__main-text">Качества:</p>
+                    <ul>
+                        <li class="home-page__main-text">насыщенный легкий вкус;</li>
+                        <li class="home-page__main-text">отличная эргономика;</li>
+                        <li class="home-page__main-text">правильно плавится.</li>
+                    </ul>
+                </div>
+                <div class="home-assortment__pagination"></div>
+            </div>
+        </section>
+        <section class="container home-bestsellers">
+            <h2 class="home-page__subtitle home-bestsellers__title">Самое лучшее</h2>
+            <div class="home-bestsellers__container">
+                <article class="banner vanilla-plombir-banner">
+                    <div class="vanilla-plombir-banner__container">
+                        <h3 class="banner__title">maMILlow’s classic vanilla-plombir</h3>
+                        <p class="banner__text">
+                            Бессменная классика и продукт
+                            в стильной упаковке.<br>
+                            Современное качественое прочтение
+                            лучших традиций марщмеллоу.
+                        </p>
+                        <a href="" class="vanilla-plombir-banner__button">Открыть</a>
+                    </div>
+                    <img src="images/vanilla-plombir-banner-img.png" alt="" class="vanilla-plombir-banner__img">
+                </article>
+                <article class="banner fruitmix-banner">
+                    <div class="fruitmix-banner__container">
+                        <h3 class="banner__title">maMILlow’s classic fruitmix</h3>
+                        <p class="banner__text">
+                            Озорной и веселый пролукт
+                            для многограного удовольствия.
+                            Нежный, легкий, упругий и
+                            с отличными вкусовыми качествами.
+                        </p>
+                    </div>
+                    <img src="images/fruitmix-banner.png" alt="" class="fruitmix-banner__img">
+                </article>
+            </div>
+        </section>
+        <section class="container home-size">
+            <h2 class="home-size__title">Пачка для семьи или компании!</h2>
+            <p class="home-size__text">Еще большее maMILlow’s, чтобы всем точно хватило!</p>
+        </section>
+        <section class="container home-catalog">
+            <h2 class="home-page__subtitle home-catalog__title">Каталог</h2>
+            <div class="container category-banner category-banner--classic">
+                <p class="category-banner__subtitle">Чаще всего покупают!</p>
+                <p class="category-banner__title">Классический</p>
+                <p class="category-banner__description">
+                    Классическая линия маршмеллоу maMiLliow’s имеет изысканный
+                    ванильный нежный вкус с легкими нотками пломбирного мороженого
+                    или вкус фруктового сочного микса.
+                    <br><br>
+                    Продукт мягкий, воздушный и тает во рту, оставляя приятное
+                    сливочное послевкусие. В поджаренном виде добавляется
+                    карамельная хрустящая корочка, а внутри он становится мягучим и тёплым.
+                </p>
+                <ul class="category-banner__info">
+                    <li class="category-banner__info-item">доступно в размерах: 90 г и 120 г;</li>
+                    <li class="category-banner__info-item">имеет два вкуса: ваниль-пломбир и фруктовый микс.</li>
+                </ul>
+                <button class="category-banner__button">Открыть</button>
+            </div>
+            <div class="container category-banner category-banner--sugar-free">
+                <p class="category-banner__subtitle">Чаще всего покупают!</p>
+                <p class="category-banner__title">Без сахара</p>
+                <p class="category-banner__description">
+                    Классическая линия маршмеллоу maMiLliow’s имеет изысканный
+                    ванильный нежный вкус с легкими нотками пломбирного мороженого
+                    или вкус фруктового сочного микса.
+                    <br><br>
+                    Продукт мягкий, воздушный и тает во рту, оставляя приятное
+                    сливочное послевкусие. В поджаренном виде добавляется
+                    карамельная хрустящая корочка, а внутри он становится мягучими тёплым.
+                </p>
+                <ul class="category-banner__info">
+                    <li class="category-banner__info-item">доступно в размерах: 90 г и 120 г;</li>
+                    <li class="category-banner__info-item">имеет два вкуса: ваниль-пломбир и фруктовый микс.</li>
+                </ul>
+                <button class="category-banner__button category-banner__button--sugar-free">Открыть</button>
+            </div>
+        </section>
+        <section class="container home-ideas">
+            <div class="home-ideas__header">
+                <h2 class="home-page__subtitle home-ideas__title">Идеи</h2>
+                <div class="home-ideas__container">
+                    <p class="home-ideas__subtitle">Для чего лучше использовать</p>
+                    <p class="home-ideas__text">
+                        Маршмеллоу – универсальный пролукт, который можно использовать в кулинарии, творчестве и
+                        развлечениях. Он идеально подходит для создания десертов, украшения блюд или оригинальных
+                        подарков. Кроме того, маршмеллоу станет отличным элементом для детских игр и творческих
+                        занятий.
+                    </p>
+                </div>
+            </div>
+            <ul class="home-ideas__list">
+                <li class="home-ideas__item">
+                    <span class="home-ideas__span">Украшение напитков и десертов</span>
+                    <img src="images/home-ideas-1.png" alt="" class="home-ideas__img">
+                </li>
+                <li class="home-ideas__item">
+                    <span class="home-ideas__span">Добавка в морожеое</span>
+                    <img src="images/home-ideas-2.png" alt="" class="home-ideas__img">
+                </li>
+                <li class="home-ideas__item">
+                    <img src="images/home-ideas-3.png" alt="" class="home-ideas__img">
+                    <span class="home-ideas__span">Топпинг</span>
+                </li>
+                <li class="home-ideas__item">
+                    <img src="images/home-ideas-4.png" alt="" class="home-ideas__img">
+                    <span class="home-ideas__span">С барбекю</span>
+                </li>
+            </ul>
+        </section>
+        <section class="container home-blog">
+            <h2 class="home-page__subtitle home-blog__title">Блог</h2>
+            <div class="home-blog__container">
+                <artice class="home-blog__card">
+                    <img src="images/home-blog-img-1.png" alt="" class="home-blog__img">
+                    <a href="" class="home-blog__category">Необычные рецепты</a>
+                    <p class="home-blog__time">займёт 3 минуты чтения</p>
+                    <h3 class="home-blog__subtitle">Пицца с маршмеллоу и ягодами</h3>
+                    <p class="home-blog__description">
+                        Ингредиенты: Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quaerat porro incidunt magni molestiae perferendis quia nam, at adipisci, blanditiis esse possimus culpa?
+                    </p>
+                    <a href="" class="home-blog__more-info">Читать далее...</a>
+                </artice>
+                <artice class="home-blog__card">
+                    <img src="images/home-blog-img-2.png" alt="" class="home-blog__img">
+                    <a href="" class="home-blog__category">Необычные рецепты</a>
+                    <p class="home-blog__time">займёт 3 минуты чтения</p>
+                    <h3 class="home-blog__subtitle">Капкейк с запечёным маршмеллоу</h3>
+                    <p class="home-blog__description">
+                        Ингредиенты: Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nisi dolorem quibusdam tempora sed temporibus quidem nihil minima id sunt?
+                    </p>
+                    <a href="" class="home-blog__more-info">Читать далее...</a>
+                </artice>
+                <artice class="home-blog__card">
+                    <img src="images/home-blog-img-3.png" alt="" class="home-blog__img">
+                    <a href="" class="home-blog__category">Необычные рецепты</a>
+                    <p class="home-blog__time">займёт 3 минуты чтения</p>
+                    <h3 class="home-blog__subtitle">Маршмеллоу-тосты с солёной карамелью</h3>
+                    <p class="home-blog__description">
+                        Ингредиенты: Lorem ipsum dolor sit amet consectetur adipisicing elit. At esse nesciunt deleniti itaque distinctio deserunt?
+                    </p>
+                    <a href="" class="home-blog__more-info">Читать далее...</a>
+                </artice>
+            </div>
+            <a href="" class="home-blog__button">Смотреть больше</a>
+        </section>
+    </main>
+    <div class="container feedback" id="#feedback">
+        <section class="contact" aria-labelledby="#contact-heading">
+            <h2 id="contact-heading" class="about__title">Контакты</h2>
+            <img srcset="images/contact-bg-mobile.png 480w, images/contact-bg.png" alt="" class="contact__image">
+            <ul class="contact__list">
+                <li class="contact__item">
+                    <img src="images/contact-email.png" alt="" class="contact__icon">
+                    <div class="contact__info">
+                        <p class="contact__title">Email</p>
+                        <a href="mailto:info@mamillows.ru" class="contact__link">info@mimillows.ru</a>
+                    </div>
+                </li>
+                <li class="contact__item">
+                    <img src="images/contact-tg.png" alt="" class="contact__icon">
+                    <div class="contact__info">
+                        <p class="contact__title">Поддержка</p>
+                        <a href="t.me/mamillows" target="_blank" class="contact__link">t.me/mamillows</a>
+                    </div>
+                </li>
+                <li class="contact__item">
+                    <img src="images/contact-vk.png" alt="" class="contact__icon">
+                    <div class="contact__info">
+                        <p class="contact__title">ВКонтакте</p>
+                        <a href="vk.com/mamillows" target="_blank" class="contact__link">vk.com/mamillows</a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="feedback__container">
+            <h2 class="about__title">Отправить вопрос</h2>
+            <p class="feedback__text">Если вы хотите обсудить что-либо, связанное с оплатой, учётной записью, лицензированием, партнёрством или задать вопросы перед продажей, вы попали по адресу</p>
+            <form action="" class="feedback__form">
+                <div class="feedback__value feedback__name">
+                    <label for="feedback-name" class="feedback__label">Полное имя</label>
+                    <input placeholder="Введите имя..." name="feedback-name" type="text" class="feedback__input">
+                </div>
+                <div class="feedback__value feedback__email">
+                    <label for="feedback-email" class="feedback__label">Email</label>
+                    <input placeholder="Введите email..." name="feedback-email" type="text" class="feedback__input">
+                </div>
+                <div class="feedback__value feedback__phone">
+                    <label for="feedback-phone" class="feedback__label">Номер телефона</label>
+                    <input placeholder="Введите номер телефона..." name="feedback-phone" type="text" class="feedback__input">
+                </div>
+                <div class="feedback__value feedback__question">
+                    <label for="feedback-question" class="feedback__label">Ваш вопрос</label>
+                    <textarea rows="6"placeholder="Написать сообщение" name="feedback-question" class="feedback__text-area"></textarea>
+                </div>
+                <button type="submit" class="feedback__button">Отправить</button>
+            </form>
+        </section>
+    </div>
+    <footer class="footer">
+        <label for="subscription-email" class="footer__label">Получите доступ к интересным статьям, акциям и специальным предложениям для вас</label>
+        <form action="" class="footer__form">
+            <fieldset class="footer__field">
+                <input type="text" id="subscription-email" class="footer__input">
+                <button type="submit" class="footer__button">Отправить</button>
+            </fieldset>
+            <fieldset class="footer__field">
+                <input type="checkbox" checked="false" id="subscription-checkbox" class="footer__privacy-checkbox">
+                <label for="subscription-checkbox" class="footer__privacy-label">Я согласен с <a href="">политикой конфиденциальности</a></label>
+            </fieldset>
+        </form>
+        <img srcset="images/footer-separator-mobile.png 480w" alt="" class="footer__sepatator">
+        <p class="footer__info">
+            ООО &laquo;Компания&raquo;<br>
+            <br>
+            ИНН 12943253421<br>
+            <br>
+            Адрес юридический: 115114 г. Белгород Петров-Сергеева-Егорова-Андреева дом 4, стр. 1, 9 этаж, офис 93<br>
+            <br>
+            Безопасность платежей гарантируется использованием SSL протокола. Данные вашей банковской карты надёжно защищены при оплате онлайн<br>
+            <br>
+            &copy; 2024 ООО &laquo;Компания&raquo;. Все права защищены.
+        </p>
+        <nav class="footer__nav">
+            <a href="" class="footer__nav-link">Категория</a>
+            <a href="" class="footer__nav-link">Другая категория</a>
+            <a href="" class="footer__nav-link">Ещё категория</a>
+            <a href="" class="footer__nav-link">И ещё одна</a>
+            <a href="" class="footer__nav-link">Категория</a>
+            <a href="" class="footer__nav-link">Другая категория</a>
+            <a href="" class="footer__nav-link">Ещё категория</a>
+            <a href="" class="footer__nav-link">И ещё одна</a>
+            <a href="" class="footer__nav-link">Идеи</a>
+            <a href="" class="footer__nav-link">Контакты</a>
+            <a href="" class="footer__nav-link">Блог</a>
+            <a href="" class="footer__nav-link">Каталог</a>
+            <a href="" class="footer__nav-link">Политика конфиденциальности</a>
+            <a href="" class="footer__nav-link">Политика возврата</a>
+        </nav>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="index.js"></script>
+</html>

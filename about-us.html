@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://necolas.github.io/normalize.css/latest/normalize.css" rel="stylesheet" />
-    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
     <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="index.min.css">
+    <link rel="stylesheet" href="index.css">
     <title>О нас</title>
 </head>
 <body>
@@ -65,7 +64,7 @@
                 <div class="swiper-navigation about-top__navigation"></div>
             </div>
         </div>
-        <div class="about-header">
+        <div class="container container--small about-header">
             <h1 class="about__title">О нас</h1>
             <nav class="about-nav">
                 <ul class="about-nav__list">
@@ -90,7 +89,7 @@
                 <img src="images/about-philosophy-image.png" alt="" class="about-philosophy__image">
             </div>
         </section>
-        <section class="container about-production" id="production" aria-labelledby="#production-heading">
+        <section class="container container--small about-production" id="production" aria-labelledby="#production-heading">
             <img src="images/about-production-image.png" alt="" class="about-production__image">
             <div class="about-production__container">
                 <h2 class="about__title" id="production-heading">Производство</h2>
@@ -120,7 +119,7 @@
             </div>
             <img src="images/about-recipe-document.png" alt="" class="about-recipe__image">
         </section>
-        <section class="about-legend" id="legend" aria-labelledby="#legend-heading">
+        <section class="container about-legend" id="legend" aria-labelledby="#legend-heading">
             <img src="images/about-legend-image.png" alt="" class="about-legend__image">
             <div class="about-legend__container">
                 <h2 class="about__title" id="legend-heading">Легенда бренда</h2>
@@ -129,7 +128,7 @@
             </div>
         </section>
     </main>
-    <div class="container feedback">
+    <div class="container feedback" id="#feedback">
         <section class="contact" aria-labelledby="#contact-heading">
             <h2 id="contact-heading" class="about__title">Контакты</h2>
             <img srcset="images/contact-bg-mobile.png 480w, images/contact-bg.png" alt="" class="contact__image">
@@ -138,7 +137,7 @@
                     <img src="images/contact-email.png" alt="" class="contact__icon">
                     <div class="contact__info">
                         <p class="contact__title">Email</p>
-                        <a href="mailto:info@mimollows.ru" class="contact__link">info@mimillows.ru</a>
+                        <a href="mailto:info@mamillows.ru" class="contact__link">info@mimillows.ru</a>
                     </div>
                 </li>
                 <li class="contact__item">
@@ -224,5 +223,5 @@
     </footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="index.min.js"></script>
+<script src="index.js"></script>
 </html>
